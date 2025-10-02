@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BarChart3, History } from "lucide-react";
+import { BarChart3, History, Users } from "lucide-react";
 
 const items = [
   { href: "/dashboard", label: "Dashboard", Icon: BarChart3 },
+  { href: "/customers", label: "Customers", Icon: Users }, // ⬅️ baru
   { href: "/visits", label: "Visits", Icon: History },
 ];
 
