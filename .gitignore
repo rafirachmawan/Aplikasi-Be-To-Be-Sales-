@@ -1,70 +1,27 @@
-# node & tools
-node_modules/
-.npm/
-.pnp.* 
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-
-# logs
-*.log
+# node & OS
+**/node_modules/
 npm-debug.log*
-yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-
-# OS / editor
 .DS_Store
-Thumbs.db
-.idea/
-.vscode/
 
-# env & secrets
-.env
-.env.*
-!.env.example
-*.secret.*
-*.private.*
-*.key
-*.keystore
-*.jks
-*.p12
-*.pem
-*.crt
-*.cert
+# build artifacts (tetap masukin source)
+**/dist/
+**/build/
+apps/mobile/android/app/build/
+apps/mobile/ios/build/
 
-# Firebase / Google (opsional – lihat catatan di bawah)
-**/google-services.json
-**/GoogleService-Info.plist
-firebase-admin*.json
-
-# Expo / RN cache
+# Expo / RN caches
 .expo/
 .expo-shared/
-dist/
-web-build/
-# Metro / bundler
-.packager
-.gradle/
-**/android/.gradle/
-**/android/local.properties
-**/android/app/build/
-**/android/build/
-**/ios/Pods/
-**/ios/build/
-**/ios/**/*.xcuserdatad/
-**/ios/**/*xcworkspace/xcuserdata/
-**/ios/*/xcshareddata/WorkspaceSettings.xcsettings
 
-# Output / artifacts
-**/build/
-**/out/
-coverage/
+# ENV / secrets
+**/.env
+**/.env.*
+*.keystore
+*.p12
+*.mobileprovision
 
-# Fastlane / others
-fastlane/report.xml
-fastlane/Preview.html
-fastlane/screenshots
+# JANGAN meng-ignore seluruh 'apps/'
+# kalau terlanjur ada 'apps/' di .gitignore, hapus atau override:
+!apps/
+!apps/**
